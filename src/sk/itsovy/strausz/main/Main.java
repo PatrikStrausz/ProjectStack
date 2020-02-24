@@ -2,8 +2,6 @@ package sk.itsovy.strausz.main;
 
 import sk.itsovy.strausz.linkedlist.MyLinkedList;
 import sk.itsovy.strausz.linkedlist.Node;
-import sk.itsovy.strausz.queue.Queue;
-import sk.itsovy.strausz.stack.Stack;
 
 public class Main {
 
@@ -27,22 +25,22 @@ public class Main {
 //        System.out.println(queue.toString());
 
         MyLinkedList list = new MyLinkedList();
-        Node n1 = new Node("Filip");
-        Node n2 = new Node("Eva");
-        Node n3 = new Node("Jaro");
+        Node<String> n1 = new Node<>("Filip");
+        Node<String> n2 = new Node<>("Eva");
+        Node<String> n3 = new Node<>("Jaro");
         list.addToFront(n1);
         list.addToFront(n2);
         list.addToFront(n3);
 
-        Node n4 = new Node("Emil");
-        Node n5 = new Node("Denisa");
+        Node<String> n4 = new Node<>("Emil");
+        Node<String> n5 = new Node<>("Denisa");
 
 
         list.addToEnd(n4);
         list.addToEnd(n5);
 
 
-        Node n6 = new Node("Bartolomej");
+        Node<String> n6 = new Node<>("Bartolomej");
         list.add(1, n6);
 
         list.remove(list.findByValue("Emil"));

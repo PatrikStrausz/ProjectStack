@@ -102,18 +102,18 @@ public class MyLinkedList {
         }
 
 
-            Node temp = head;
-        if(!(temp.getValue() instanceof  String)){
+        Node temp = head;
+        if (!(temp.getValue() instanceof String)) {
             return null;
         }
-            while (temp != null) {
-                if (temp.getValue().equals(name)) {
-                    return temp;
-                }
-                temp = temp.getNext();
+        while (temp != null) {
+            if (temp.getValue().equals(name)) {
+                return temp;
             }
-            return null;
+            temp = temp.getNext();
         }
+        return null;
+    }
 
 
     public int getSize() {
