@@ -116,6 +116,8 @@ class MyLinkedListTest {
         Node<String> n6 = new Node<>("Test node 2");
         Node<Integer> n7 = new Node<>(456);
 
+        list.add(10000, n1);
+
         list.remove(n1);
         list.remove(n1);
         list.addToFront(n1);

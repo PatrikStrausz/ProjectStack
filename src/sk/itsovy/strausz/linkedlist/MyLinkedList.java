@@ -40,7 +40,7 @@ public class MyLinkedList {
     }
 
     public void add(int position, Node node) {
-        if (node == null) {
+        if (node == null || head==null) {
             return;
         }
         if (position <= 0) {
