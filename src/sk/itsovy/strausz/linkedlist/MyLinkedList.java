@@ -25,6 +25,10 @@ public class MyLinkedList {
         if (node == null) {
             return;
         }
+        if (head == null) {
+            head = node;
+            return;
+        }
 
         Node temp = head;
         while (temp.getNext() != null)
@@ -40,7 +44,7 @@ public class MyLinkedList {
     }
 
     public void add(int position, Node node) {
-        if (node == null || head==null) {
+        if (node == null ) {
             return;
         }
         if (position <= 0) {
