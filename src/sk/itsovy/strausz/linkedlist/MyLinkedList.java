@@ -35,6 +35,10 @@ public class MyLinkedList {
     }
 
 
+    public Node getHead() {
+        return head;
+    }
+
     public void add(int position, Node node) {
         if (node == null) {
             return;
